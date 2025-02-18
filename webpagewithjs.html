@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 - Light Toggle</title>
+    <style>
+        /* Styling the body */
+        body {
+            background-color: lightgray; /* Changed the background color */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Styling the heading */
+        h2 {
+            color: darkblue;
+        }
+        /* Styling the paragraphs */
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+        /* Styling the buttons */
+        button {
+            padding: 10px 20px;
+            margin: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        /* Styling the image */
+        img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <h2>Welcome to My Lab 4 Project</h2>
+
+    <!-- Description of what the page does -->
+    <p>This page demonstrates the use of JavaScript to toggle images. The buttons below will turn the light on and off by changing the image source.</p>
+
+    <!-- Your name appears here -->
+    <p>Created by: <strong>Zuhur</strong></p> <!-- Display your first name -->
+
+    <!-- Button to turn on the light -->
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+    <!-- Image that will toggle between on and off -->
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+    <!-- Button to turn off the light -->
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
